@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,9 +10,16 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        colorValue: '#025955',
+      },
+      fontFamily: {
+        trebuchetMs: ['Trebuchet MS'],
+        raleway: ['var(--font-raleway)'],
+        firaCode: ['var(--font-fira-code)'],
       },
     },
   },
   plugins: [],
-} satisfies Config;
+  darkMode: 'selector',
+};
+export default config;
