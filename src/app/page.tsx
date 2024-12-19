@@ -6,8 +6,10 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-around items-center w-full h-full gap-1 bg-[#488e83] 
-    font-raleway">
+    <div
+      className="flex flex-col justify-stretch items-center w-full h-full bg-[#488e83] 
+    font-raleway"
+    >
       <Header />
       <Moonex />
       <Features />

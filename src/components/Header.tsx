@@ -3,10 +3,10 @@ import Hero from "@/components/Hero";
 
 const Header = () => {
   return (
-    <div className="flex flex-col justify-around items-center w-full">
-      <Hero />
+    <section className="flex flex-col justify-around items-center w-full max-h-[970px] bg-[#d1efeb] flex-grow flex-shrink overflow-auto bg-[url('/circles.png')] bg-contain bg-repeat bg-center">
       <Navbar />
-    </div>
+      <Hero />
+    </section>
   );
 };
 

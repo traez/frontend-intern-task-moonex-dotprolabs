@@ -2,7 +2,7 @@
 
 const Features = () => {
   return (
-    <div>Features</div>
+    <div className="flex-grow flex-shrink overflow-auto">Features</div>
   )
 }
 

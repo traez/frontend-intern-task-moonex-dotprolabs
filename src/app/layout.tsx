@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${raleway.variable} ${firaCode.variable}`}>
-      <body className="antialiased flex flex-col justify-center items-center h-screen w-full bg-[#196e61]">
+      <body className="antialiased flex flex-col justify-center items-center h-screen w-full bg-[#051422]">
         <main className="flex-grow h-full w-full max-w-[1280px]">
           {children}
         </main>

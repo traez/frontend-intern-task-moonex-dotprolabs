@@ -2,7 +2,7 @@
 
 const Faqs = () => {
   return (
-    <div>Faqs</div>
+    <div className="flex-grow flex-shrink overflow-auto">Faqs</div>
   )
 }
 

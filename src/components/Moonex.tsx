@@ -2,7 +2,7 @@
 
 const Moonex = () => {
   return (
-    <div>Moonex</div>
+    <div className="flex-grow flex-shrink overflow-auto">Moonex</div>
   )
 }
 
