@@ -1,21 +1,23 @@
+import HeroLeft from "@/components/HeroLeft";
+import HeroRight from "@/components/HeroRight";
+
 const Hero = () => {
   return (
-    <article className="text-gray-700">
-      <b>Hero</b>
-      <p>
-        Overflow content is clipped at the padding box, and overflow content can
-        be scrolled into view using scroll bars. User agents display scroll bars
-        whether or not any content is overflowing, so in the horizontal and
-        vertical directions if the value applies to both directions. The use of
-        this keyword, therefore, can prevent scroll bars from appearing and
-        disappearing as content changes. Printers may still print overflow
-        content. The element box is a Overflow content is clipped at the padding
-        box, and overflow content can be scrolled into view using scroll bars.
-        Unlike scroll, user agents display scroll bars only if the content is
-        overflowing. If content fits inside the padding box, it looks the same
-        as with visible but still establishes a new formatting context. The
-        element box is a scroll container.scroll container.
-      </p>
+    <article className="grid grid-rows-[1fr] grid-cols-[1fr] text-gray-700 w-full h-auto lg:grid-rows-[auto] lg:grid-cols-[7fr_1fr_2fr]">
+      {/* Left Section */}
+      <HeroLeft />
+
+      {/* Middle Section */}
+      <section className="hidden lg:block p-4 col-start-2 row-start-1">
+        {/*   <h2>Middle Section</h2>
+        <p>
+          This is the middle section. It appears in the second column at 1024px
+          or larger.
+        </p> */}
+      </section>
+
+      {/* Right Section */}
+      <HeroRight />
     </article>
   );
 };
