@@ -51,7 +51,7 @@ const Navbar = () => {
           {/* Mobile menu dropdown */}
           <div
             className="absolute top-[50px] right-0 w-48 bg-[#051422]/80
- backdrop-blur-sm shadow-md z-10 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300"
+            backdrop-blur-sm shadow-md z-10 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300"
           >
             {menuItems.map((item) => (
               <a

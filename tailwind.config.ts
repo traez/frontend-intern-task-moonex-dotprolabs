@@ -17,6 +17,9 @@ const config: Config = {
         raleway: ['var(--font-raleway)'],
         firaCode: ['var(--font-fira-code)'],
       },
+      screens: {
+        '1xl': '1400px',
+      },
     },
   },
   plugins: [],

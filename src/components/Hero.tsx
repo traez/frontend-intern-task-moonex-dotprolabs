@@ -3,7 +3,7 @@ import HeroRight from "@/components/HeroRight";
 
 const Hero = () => {
   return (
-    <article className="grid grid-rows-[1fr] grid-cols-[1fr] text-gray-700 w-full h-auto lg:grid-rows-[auto] lg:grid-cols-[7fr_1fr_2fr]">
+    <article className="grid grid-rows-[1fr] grid-cols-[1fr]  w-full h-auto 1xl:grid-rows-[auto] 1xl:grid-cols-[7fr_2fr_3fr]">
       {/* Left Section */}
       <HeroLeft />
 
