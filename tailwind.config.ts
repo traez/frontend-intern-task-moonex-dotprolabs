@@ -18,6 +18,7 @@ const config: Config = {
         firaCode: ['var(--font-fira-code)'],
       },
       screens: {
+        'xs': '500px',
         '1xl': '1400px',
       },
     },
