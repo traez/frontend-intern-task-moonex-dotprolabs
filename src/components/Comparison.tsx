@@ -30,7 +30,7 @@ const Comparison: React.FC = () => {
         <table className="w-full h-full border-collapse border border-[#7A7A7A]">
           <thead>
             <tr>
-              <th className="w-[35%] px-0.5 xs:px-1 sm:px-2 lg:px-4 py-1 xs:py-2 sm:py-3 text-left text-[10px] xs:text-xs sm:text-sm font-semibold text-white border border-[#7A7A7A] text-center">
+              <th className="w-[35%] px-0.5 xs:px-1 sm:px-2 lg:px-4 py-1 xs:py-2 sm:py-3 text-[10px] xs:text-xs sm:text-sm font-semibold text-white border border-[#7A7A7A] text-center">
                 {typeof headers[0].content === "string" ? (
                   <b
                     className="text-[#E4B40D] text-[0.8rem] sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-semibold">
@@ -63,7 +63,7 @@ const Comparison: React.FC = () => {
           <tbody className="divide-y divide-gray-200">
             {sampleData.map((row, rowIndex) => (
               <tr key={rowIndex}>
-                <td className="w-[35%] px-0.5 xs:px-1 sm:px-2 lg:px-4 py-0.5 xs:py-2 sm:py-4 text-[8px] xs:text-xs sm:text-sm text-white border border-[#7A7A7A] whitespace-normal">
+              <td className="w-[35%] pl-2 xs:pl-4 sm:pl-6 lg:pl-20 py-1 xs:py-3 sm:py-5 text-[10px] xs:text-sm sm:text-base text-white border border-[#7A7A7A] whitespace-normal">
                   {row.column1}
                 </td>
                 <td className="w-[32.5%] px-0.5 xs:px-1 sm:px-2 lg:px-4 py-0.5 xs:py-2 sm:py-4 text-center border border-[#7A7A7A]">
@@ -78,7 +78,7 @@ const Comparison: React.FC = () => {
                   </div>
                 </td>
                 <td className="w-[32.5%] px-0.5 xs:px-1 sm:px-2 lg:px-4 py-0.5 xs:py-2 sm:py-4 text-center border border-[#7A7A7A]">
-                  <div className="relative w-[8px] h-[6.46px] xs:w-[20px] xs:h-[16px] sm:w-[26px] sm:h-[21px] mx-auto">
+                <div className="relative w-[16px] h-[13px] xs:w-[40px] xs:h-[31px] sm:w-[50px] sm:h-[41px] mx-auto">
                     <Image
                       src="/close_small.png"
                       alt="Close"
