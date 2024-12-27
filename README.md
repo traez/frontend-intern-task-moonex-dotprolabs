@@ -1,6 +1,6 @@
-# Naija Japa PostgreSQL App
+# Frontend Intern Task Moonex Dotprolabs
 
-To enhance my full-stack development skills, I am transitioning from using non-relational databases (MongoDB) to relational databases (PostgreSQL, MySQL), in alignment with industry best practices.
+This project was developed as part of my skill-building and preparation for a freelancing web development career, focusing on creating simple, professional websites using Next.js and a headless CMS to deliver modern and efficient solutions.
 
 ## Table of contents
 
@@ -20,7 +20,18 @@ To enhance my full-stack development skills, I am transitioning from using non-r
 
 ### The Challenge/User Stories
 
-The challenge for this project revolves around building a comprehensive filtering and display system for Nigerian users based on various attributes such as age, gender, marital status, city, religion, and more. Users are able to filter individuals from different countries (e.g., Canada, South Africa, UK, etc.), with the application dynamically fetching data based on the selected filter criteria. Key challenges include managing asynchronous data fetching from multiple Supabase tables, ensuring a seamless user experience with loading states, and handling edge cases where no data is found. Additionally, integrating and updating multiple filter components based on user selection requires proper state management and efficient rendering. The project aims to provide an intuitive interface for exploring detailed profiles of Nigerians abroad while ensuring optimal performance and user interaction.
+This project is part of a frontend development challenge designed to evaluate and enhance skills in creating responsive, user-friendly websites based on a Figma design. Participants are tasked with building a professional site that adapts seamlessly across all screen sizes using React and Tailwind CSS. Creativity is encouraged for mobile and tablet layouts, as no designs for these are provided.
+
+In addition to responsiveness, the project requires implementing minimal animations, such as hover effects and smooth transitions, to deliver a polished user experience. Interactive components like responsive navigation bars and FAQ sections should be built using ShadCN or similar libraries.
+
+Participants must deploy the completed project using Vercel or Netlify, ensuring the live site and source code are publicly accessible via a GitHub repository. The deadline for submission is 27 November 2024. 
+
+- **Tools and Technologies** 
+The challenge leverages the React Vite framework for development, with Tailwind CSS for styling and ShadCN for interactive components. The primary fonts are Raleway and Neue Machina, with Fira Code as an alternative for Neue Machina if unavailable. 
+
+- **Deliverables** 
+A responsive website deployed live on Vercel or Netlify.
+A public GitHub repository containing the project’s source code.
 
 ### Screenshot
 
@@ -28,8 +39,8 @@ The challenge for this project revolves around building a comprehensive filterin
 
 ### Links
 
-- Solution URL: [https://github.com/traez/naija-japa-postgresql-app](https://github.com/traez/naija-japa-postgresql-app)
-- Live Site URL: [https://naija-japa-postgresql-app.vercel.app/](https://naija-japa-postgresql-app.vercel.app/)
+- Solution URL: [https://github.com/traez/frontend-intern-task-moonex-dotprolabs](https://github.com/traez/frontend-intern-task-moonex-dotprolabs)
+- Live Site URL: [https://frontend-intern-task-moonex-dotprolabs.vercel.app/](https://frontend-intern-task-moonex-dotprolabs.vercel.app/)
 
 ## My process
 
@@ -42,31 +53,53 @@ The challenge for this project revolves around building a comprehensive filterin
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 - Typescript
-- Nodejs      
-- Supabase    
-- PostgreSQL       
+- Nodejs            
 - Tailwind CSS      
 
 ### What I learned
    
-- **Exploring Mockaroo for Data Generation**  
-I used `mockaroo.com` as an alternative to `mockaron.com` for generating mock data. Mockaroo provided a more customizable and versatile solution for creating realistic datasets that helped in testing my application.  
-- **Using Route Handlers to Transfer Data Between Next.js Files**  
-I learned how to use a Route Handler to extract and write data from one Next.js file to another. This functionality allows for seamless data flow between components and APIs, improving the structure and organization of my Next.js project.  
-- **Using Postman and Supabase REST API**  
-I learned how to use Postman and the Supabase REST API to populate a table in Supabase. This hands-on approach helped me understand how to interact with Supabase directly for database operations and testing API endpoints efficiently.  
-- **Choosing Between Client-Side and Server-Side Filtering**  
-I learned that choosing between client-side and server-side filtering depends on factors like dataset size, update frequency, and user experience. Client-side filtering, where data is fetched once from Supabase and filtered locally, is efficient for small to medium datasets. It offers faster subsequent operations and reduces server requests but can increase client memory usage and initial load time. Server-side filtering, where data is queried directly from Supabase for each filter operation, is better for large datasets and ensures up-to-date results. However, it adds server load and potential latency. A balanced approach in a Next.js app could involve server-side filtering for larger datasets or frequently updated data while leveraging caching, pagination, or static generation to optimize performance and user experience.    
-- **Supabase and RPC for Raw SQL Queries**  
-I learned that Supabase supports executing raw SQL queries through the RPC (Remote Procedure Call) function. Any SQL query not supported by PostgREST can be accomplished by creating a Postgres function and calling it via the RPC method. However, executing raw SQL queries directly from the client can lead to potential risks, such as SQL injection attacks. Therefore, it's important to secure the database from these threats by using appropriate access controls and policies.  
-- **Using Supabase Client for Direct Updates**  
-I learned that it’s possible to update Supabase directly from the client by using a `supabaseClientComponentClient`. However, this approach can expose the Supabase URL to the client, which could lead to security risks such as unauthorized access. To prevent such issues, I refactored my project to avoid exposing the Supabase URL to the client, preferring to handle updates via server actions or route handlers (API routes), which offer more control.    
-- **Securing Supabase with Row-Level Security (RLS) and Policies**  
-Supabase operates by receiving requests from a client, which means that the Supabase URL will be exposed to the user. However, Supabase provides Row-Level Security (RLS) and policies similar to Google Firestore's Rules to secure data. It's essential to always set up RLS and policies for every table in your Supabase database to protect against unauthorized access.  
-- **Understanding ORMs and Their Benefits**  
-I learned that the essence of an ORM (Object-Relational Mapper) is to simplify and streamline the interaction between an application and a relational database. ORMs like Prisma, Drizzle, Sequelize, and others abstract away raw SQL queries, allowing developers to interact with the database using their programming language (e.g., JavaScript/TypeScript). Supabase’s ORM-like tool, the Supabase Client, offers a JavaScript/TypeScript API for interacting with PostgreSQL databases, making database queries and data manipulations easier and more developer-friendly.  
-- **Preventing Supabase Project Pausing with GitHub Actions**  
-While building this project, I implemented a GitHub Actions workflow to prevent my Supabase project from automatically pausing due to inactivity. This automated solution runs a scheduled job twice a week, pinging the Supabase database with a simple query. By setting up this workflow, I learned how to leverage GitHub Actions for maintaining database activity, ensuring continuous availability of my application's backend. This experience taught me the importance of proactive measures in cloud service management and improved my skills in DevOps practices, particularly in automating maintenance tasks for serverless databases.    
+- **Google Fonts Optimization with Tailwind CSS and Next.js**  
+Confirmed the protocol for using Next.js's built-in Google Fonts optimization with Tailwind CSS.    
+- **Standardized Max-width Setup**  
+Standardized the max-width configuration for my applications to ensure consistent layouts across projects.
+- **Next.js 15 and React 19 Integration**  
+First use of Next.js 15 alongside stable React 19..
+- **Local vs Network Development Addresses**  
+**Local ([http://localhost:3000](http://localhost:3000))**: is used to access the app directly on the development machine for personal testing.  
+**Network ([http://192.168.241.190:3000](http://192.168.241.190:3000))**: enables other devices on the same local network (e.g., Wi-Fi or LAN) to access the application. This is useful for testing on mobile devices while developing.
+- **Figma Asset Export and Specification Mirroring**  
+Export all assets (files) from a Figma project by clicking Export under the project name in the left sidebar.  
+Explore layers and sublayers in Figma to view and replicate the exact settings for individual items.
+- **Flexbox for Responsive Layouts**  
+Adopted a flexible, responsive layout approach using Flexbox for item alignment along the main axis:  
+```
+.inner-box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+```
+Tailwind CSS equivalent:  
+`<div className="flex-grow flex-shrink overflow-auto border border-gray-300">Content 1</div>`  
+This approach is preferred over using grid on the main outer container for responsive designs across mobile and desktop views.
+- **Smooth Color Transitions with Tailwind CSS**  
+The `transition-colors` utility in Tailwind CSS adds smooth transitions for color property changes (e.g., color, background-color) when triggered by hover, focus, or JavaScript.
+- **Multiple Background Images with Tailwind CSS**  
+Tailwind CSS supports multiple background images using arbitrary value syntax:
+```html
+<div className="bg-[url('/circles.png'),url('/bg.png')]">
+```
+This applies two layered background images, with '/circles.png' on top of '/bg.png'.
+- **Gap Property in CSS and Tailwind**  
+The `gap` CSS property is a shorthand for `column-gap` and `row-gap`. Tailwind CSS provides utilities like:
+- `gap-x-1` for `column-gap: 0.25rem; /* 4px */`
+- `gap-y-1` for `row-gap: 0.25rem; /* 4px */`
+- **Sibling State Styling with Peer Modifier in Tailwind CSS**  
+The `peer` class in Tailwind CSS allows styling an element based on the state of its sibling. Apply `peer` to a triggering element and `peer-{modifier}` to its sibling. For example, `peer-hover:block` makes a sibling visible when the peer element is hovered. The peer and its target must be direct siblings for this to work.
+- **Future Enhancement: Component Load Animations**  
+Adding animations/transitions for each component on page load would be a nice-to-have feature. While not implemented due to time constraints, it's recognized as a potential future enhancement that can be implemented as needed.
 
 ### Continued development
 
